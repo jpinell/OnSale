@@ -7,6 +7,7 @@ namespace OnSale.Web.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
+            // Haber si sirve esta mierda
         }
 
         public DbSet<Country> Countries { get; set; }
