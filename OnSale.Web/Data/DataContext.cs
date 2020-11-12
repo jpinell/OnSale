@@ -8,6 +8,9 @@ namespace OnSale.Web.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
             // Haber si sirve esta mierda
+            /* Comentario multiple
+             * *******************
+             */
         }
 
         public DbSet<Country> Countries { get; set; }
