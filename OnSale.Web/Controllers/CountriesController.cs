@@ -117,7 +117,7 @@ namespace OnSale.Web.Controllers
                 {
                     _context.Update(country);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Index));//REGRESA AL INDEX
                 }
                 catch (DbUpdateException dbUpdateException)
                 {
