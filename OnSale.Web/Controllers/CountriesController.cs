@@ -117,6 +117,7 @@ namespace OnSale.Web.Controllers
                 {
                     _context.Update(country);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateException dbUpdateException)
                 {
@@ -133,11 +134,11 @@ namespace OnSale.Web.Controllers
                 {
                     ModelState.AddModelError(string.Empty, exception.Message);
                 }
-
-                return RedirectToAction(nameof(Index));
             }
+
             return View(country);
         }
+
 
         // GET: Countries/Delete/5
         public async Task<IActionResult> Delete(int? id)
