@@ -12,6 +12,7 @@ namespace OnSale.Common.Entities
         [Required]
         public string Name { get; set; }
 
+        //Esto es para relacionar Un país con muchos departamentos
         public ICollection<Department> Departments { get; set; }
 
         [DisplayName("Departments Number")]
