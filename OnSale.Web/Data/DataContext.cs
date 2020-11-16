@@ -29,6 +29,7 @@ namespace OnSale.Web.Data
             modelBuilder.Entity<City>()
                 .HasIndex(t => t.Name)
                 .IsUnique();
+            //***
         }
     }
 }
